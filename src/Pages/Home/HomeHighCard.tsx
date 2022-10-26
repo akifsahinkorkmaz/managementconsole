@@ -20,22 +20,22 @@ function HomeHighCards(props: IHomeHighCards) {
     {
       title: "Your bank balance",
       value: props.bankBalance,
-      icon: "/media/home/cards/bank.png",
+      icon: "https://akifsahinkorkmaz.github.io/managementconsole/media/home/cards/bank.png",
     },
     {
       title: "Tickets remaining",
       value: props.jobRemainig,
-      icon: "/media/home/cards/stats.png",
+      icon: "https://akifsahinkorkmaz.github.io/managementconsole/media/home/cards/stats.png",
     },
     {
       title: "Employees working today",
       value: props.employees,
-      icon: "/media/home/cards/employees.png",
+      icon: "https://akifsahinkorkmaz.github.io/managementconsole/media/home/cards/employees.png",
     },
     {
       title: "This week's card spending",
       value: props.spendings,
-      icon: "/media/home/cards/spending.png",
+      icon: "https://akifsahinkorkmaz.github.io/managementconsole/media/home/cards/spending.png",
     },
   ]
 

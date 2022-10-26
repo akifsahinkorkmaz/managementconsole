@@ -11,35 +11,35 @@ function LeftPannel() {
     const navIcons: InavIcon[] = [
         {
             key: "home",
-            src: "/media/leftnav/home.png",
+            src: "https://akifsahinkorkmaz.github.io/managementconsole/media/leftnav/home.png",
         },
         {
             key: "stats",
-            src: "/media/leftnav/stats.png",
+            src: "https://akifsahinkorkmaz.github.io/managementconsole/media/leftnav/stats.png",
         },
         {
             key: "building",
-            src: "/media/leftnav/building.png",
+            src: "https://akifsahinkorkmaz.github.io/managementconsole/media/leftnav/building.png",
         },
         {
             key: "shop",
-            src: "/media/leftnav/shop.png",
+            src: "https://akifsahinkorkmaz.github.io/managementconsole/media/leftnav/shop.png",
         },
         {
             key: "eye",
-            src: "/media/leftnav/eye.png",
+            src: "https://akifsahinkorkmaz.github.io/managementconsole/media/leftnav/eye.png",
         },
         {
             key: "shape",
-            src: "/media/leftnav/shape.png",
+            src: "https://akifsahinkorkmaz.github.io/managementconsole/media/leftnav/shape.png",
         },
         {
             key: "documents",
-            src: "/media/leftnav/documents.png",
+            src: "https://akifsahinkorkmaz.github.io/managementconsole/media/leftnav/documents.png",
         },
         {
             key: "money",
-            src: "/media/leftnav/money.png",
+            src: "https://akifsahinkorkmaz.github.io/managementconsole/media/leftnav/money.png",
         },
     ]; 
 
@@ -53,13 +53,13 @@ function LeftPannel() {
 
     return (
     <header className="bg-thpurp rounded-xl h-[90vh] w-16 fixed top-1/2 left-8 -translate-y-1/2 py-8 flex flex-col items-center justify-between">
-        <a href="/"><img src="/media/leftnav/logo.png" alt="Logo" /></a>
+        <a href="/"><img src="https://akifsahinkorkmaz.github.io/managementconsole/media/leftnav/logo.png" alt="Logo" /></a>
         <nav>
             <ul className='list-none pb-16'>
                 {navIcons.map(navIcon => { return setNavicon(navIcon.key, navIcon.src)})}
             </ul>
         </nav>
-        <a href="/"><img src="/media/leftnav/settings.png" alt="Settings" /></a>
+        <a href="/"><img src="https://akifsahinkorkmaz.github.io/managementconsole/media/leftnav/settings.png" alt="Settings" /></a>
     </header>
   );
 }
