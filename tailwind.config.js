@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         thpurp: "#6F6AF8",
+        thdpurp: "#5753C1",
         thlpurp: "#F2F2FD",
         thgreen: "#63D047",
         thlgreen: "#E2FBDA",

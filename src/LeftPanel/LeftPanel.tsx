@@ -8,14 +8,6 @@ interface InavIcon {
 function LeftPannel() {
     const [active, setActive] = useState("home");
 
-    function setNavicon (key: string, src:string): JSX.Element {
-        if (key === active){
-            return <li className='w-16 my-4 border-l-4 flex items-center justify-center box-border cursor-pointer' key={key} onClick={() => {setActive(key)}}><img src={src} alt={key} /></li>
-        }else {
-            return <li className='w-16 my-4 border-0 flex items-center justify-center cursor-pointer' key={key} onClick={() => {setActive(key)}}><img src={src} alt={key} /></li>
-        }
-    }
-
     const navIcons: InavIcon[] = [
         {
             key: "home",
@@ -49,17 +41,25 @@ function LeftPannel() {
             key: "money",
             src: "/media/leftnav/money.png",
         },
-    ]   
+    ]; 
+
+    function setNavicon (key: string, src:string): JSX.Element {
+        if (key === active){
+            return <li className='w-16 my-4 border-l-4 flex items-center justify-center box-border cursor-pointer pl-1' key={key} onClick={() => {setActive(key)}}><img src={src} alt={key} /></li>
+        }else {
+            return <li className='w-16 my-4 border-0 flex items-center justify-center cursor-pointer transition-all hover:pl-2' key={key} onClick={() => {setActive(key)}}><img src={src} alt={key} /></li>
+        }
+    }
 
     return (
-    <header className="bg-thpurp rounded-xl h-[90vh] w-16 absolute top-1/2 left-8 -translate-y-1/2 py-8 flex flex-col items-center justify-between">
-        <img src="/media/leftnav/logo.png" alt="Logo" />
+    <header className="bg-thpurp rounded-xl h-[90vh] w-16 fixed top-1/2 left-8 -translate-y-1/2 py-8 flex flex-col items-center justify-between">
+        <a href="/"><img src="/media/leftnav/logo.png" alt="Logo" /></a>
         <nav>
-            <ul className='list-none pb-24'>
+            <ul className='list-none pb-16'>
                 {navIcons.map(navIcon => { return setNavicon(navIcon.key, navIcon.src)})}
             </ul>
         </nav>
-        <img src="/media/leftnav/settings.png" alt="Settings" />
+        <a href="/"><img src="/media/leftnav/settings.png" alt="Settings" /></a>
     </header>
   );
 }

@@ -5,16 +5,19 @@ interface Idate {
 }
 
 export class Iemail {
-    avatar: string = "/media/avatars/default.png";
-    from: string;
-    topic: string;
-    date: Idate;
-    key: number;
+    avatar: string = "/media/home/email/default.png";
+    from: string = "";
+    topic: string = "";
+    date: Idate = {
+        date: "",
+        time: "",
+    };
+    key: number = 0;
 }
 
 export const Emails: Iemail[] = [
     {
-        avatar: "/media/avatars/avatar1.png",
+        avatar: "/media/home/email/avatar1.png",
         from: 'Hannah Morgan',
         topic: 'Meeting scheduled',
         date: {
@@ -24,7 +27,7 @@ export const Emails: Iemail[] = [
         key: 0
     },
     {
-        avatar: "/media/avatars/avatar2.png",
+        avatar: "/media/home/email/avatar2.png",
         from: 'Megan Clark',
         topic: 'Update on marketing campaign',
         date: {
@@ -34,7 +37,7 @@ export const Emails: Iemail[] = [
         key: 1
     },
     {
-        avatar: "/media/avatars/avatar3.png",
+        avatar: "/media/home/email/avatar3.png",
         from: 'Brandon Williams',
         topic: 'Designly 2.0 is about to launch',
         date: {
@@ -45,7 +48,7 @@ export const Emails: Iemail[] = [
         key: 2
     },
     {
-        avatar: "/media/avatars/avatar4.png",
+        avatar: "/media/home/email/avatar4.png",
         from: 'Reid Smith',
         topic: 'My friend Julie loves Dappr!',
         date: {

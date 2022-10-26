@@ -1,8 +1,8 @@
 export class Imeeting {
-    title: string;
-    date: string;
-    body: string;
-    isActive: boolean
+    title: string = "";
+    date: string = "";
+    body: string = "";
+    isActive: boolean = true;
 }
 
 export const Meeting: Imeeting = {

@@ -19,19 +19,27 @@ interface Irevenue {
     data: IrevenueData,
 }
 
-export class IhighCard {
-    bankBalance: string;
-    jobRemainig: string;
-    employees: string;
-    spendings: string;
+export class IhomeCard {
+    bankBalance: string = "";
+    jobRemainig: string = "";
+    employees: string = "";
+    spendings: string = "";
 
-    newClients: IclientInvoice;
-    invoicesOverdue: IclientInvoice;
+    newClients: IclientInvoice = {
+        value: "",
+        percent: "",
+        derivative: false,
+    };
+    invoicesOverdue: IclientInvoice = {
+        value: "",
+        percent: "",
+        derivative: false,
+    };;
 
-    revenue: Irevenue;
+    revenue!: Irevenue;
 }
 
-export const HighCard: IhighCard =  {
+export const HomeCard: IhomeCard =  {
     bankBalance: "$143,624",
     jobRemainig: "76",
     employees: "7",
@@ -66,6 +74,6 @@ export const HighCard: IhighCard =  {
     }
 }
 
-export default function highCardAPI (): string {
-    return JSON.stringify(HighCard);
+export default function homeCardAPI (): string {
+    return JSON.stringify(HomeCard);
 } 

@@ -1,8 +1,8 @@
 export class Iprogress {
-    title: string;
-    state: string;
-    statex: number;
-    estimated: string;
+    title: string = "";
+    state: string = "";
+    statex: number = 0;
+    estimated: string = "";
 }
 
 export const Progress: Iprogress = {
