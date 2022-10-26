@@ -62,6 +62,15 @@ function HomeGraph(props: IHomeGraph) {
             grid: {
               drawBorder: false,
             },
+            ticks: {
+              callback: function(tickValue: string|number, index:number, ticks) {
+                if (typeof tickValue == 'string') {
+                  return Number(tickValue.toString()) / 1000 + "k"
+                } else {
+                  return tickValue / 1000 + "k";
+                }
+              }
+            },
             beginAtZero: true
           }
         }

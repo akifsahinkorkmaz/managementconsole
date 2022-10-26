@@ -37,7 +37,7 @@ function HomeCards() {
         spendings={data.spendings}
       ></HomeHighCards>
       
-      <div className='flex items-center justify-between my-8'>
+      <div className='flex items-center justify-between my-8 relative'>
         <HomeLowCards
           newClients={data.newClients}
           Invoices={data.invoicesOverdue}
