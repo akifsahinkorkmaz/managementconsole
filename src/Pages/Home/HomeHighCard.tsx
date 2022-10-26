@@ -52,9 +52,9 @@ function HomeHighCards(props: IHomeHighCards) {
 
                 <nav className='absolute top-4 left-3 w-64 rounded-lg shadow-lg bg-white hidden group-hover/more:block group-focus-within/more:block'>
                   <ul className=' list-none'>
-                    <li className='even:bg-thlpurp p-2 hover:underline'><a href="/" className='flex items-center justify-start'><img src="/media/home/cards/bankPayment.png" alt="Payment"/><p className='ml-4'>Make payment</p></a></li>
-                    <li className='even:bg-thlpurp p-2 hover:underline'><a href="/" className='flex items-center justify-start'><img src="/media/home/cards/bankBalance.png" alt="Balance"/><p className='ml-4'>View balance details</p></a></li>
-                    <li className='even:bg-thlpurp p-2 hover:underline'><a href="/" className='flex items-center justify-start'><img src="/media/home/cards/bankAccount.png" alt="Account"/><p className='ml-4'>View account details</p></a></li>
+                    <li className='even:bg-thlpurp p-2 hover:underline'><a href="/" className='flex items-center justify-start'><img src="https://akifsahinkorkmaz.github.io/managementconsole/media/home/cards/bankPayment.png" alt="Payment"/><p className='ml-4'>Make payment</p></a></li>
+                    <li className='even:bg-thlpurp p-2 hover:underline'><a href="/" className='flex items-center justify-start'><img src="https://akifsahinkorkmaz.github.io/managementconsole/media/home/cards/bankBalance.png" alt="Balance"/><p className='ml-4'>View balance details</p></a></li>
+                    <li className='even:bg-thlpurp p-2 hover:underline'><a href="/" className='flex items-center justify-start'><img src="https://akifsahinkorkmaz.github.io/managementconsole/media/home/cards/bankAccount.png" alt="Account"/><p className='ml-4'>View account details</p></a></li>
                   </ul>
                 </nav>
               </div>
